@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alva Finance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-white text-gray-900 font-lato px-4 lato-regular">
+
+    <div id="news-banner" class="bg-gray-100 max-w-5xl mx-auto text-gray-700 text-sm px-4 py-2 flex justify-center items-center gap-1 my-2 mt-2 rounded-full relative">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M18.364 18.364a9 9 0 11-12.728-12.728 9 9 0 0112.728 12.728z" />
+        </svg>
+        <span class="text-sm">Big news, we reduced our fees</span>
+        <a href="#" class="font-semibold text-black hover:underline whitespace-nowrap ">Learn More &rarr;</a>
+
+        <!-- Close button -->
+        <button id="close-banner" aria-label="Close" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+
+
+    <!-- Header -->
+    <header class="max-w-5xl mx-auto">
+        <div class="flex items-center justify-between py-4">
+
+            <div class="flex items-center gap-14">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2 font-bold text-xl sm:text-2xl">
+                <!-- Logo SVG -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="stroke-current text-black">
+                    <circle cx="12" cy="12" r="10" stroke-width="2" />
+                    <path d="M8 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Alva</span>
+                </a>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-6 text-sm">
+                    <a href="#" class="hover:underline">Home</a>
+                    <a href="#" class="hover:underline">Features</a>
+                    <a href="#" class="hover:underline">Product</a>
+                    <a href="#" class="hover:underline">Pricing</a>
+                    <a href="#" class="hover:underline">Resource</a>
+                </nav>
+            </div>
+            
+
+            <!-- Auth buttons -->
+            <div class="hidden sm:flex items-center space-x-2">
+            <button class="px-4 py-2 text-sm border rounded-full">Login</button>
+            <button class="px-4 py-2 text-sm bg-black text-white rounded-full">Register</button>
+            </div>
+
+            <!-- Mobile menu toggle (optional) -->
+            <button class="md:hidden p-2 text-gray-600">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            </button>
+        </div>
+    </header>
+
+
+  <!-- Hero Section -->
+  <section class="container mx-auto py-6 md:py-16 grid md:grid-cols-2 items-center gap-10">
+    <!-- Text Section -->
+    <div class="flex flex-col gap-3">
+       <div class="inline-flex rounded-full bg-gray-100 w-[270px]">
+            <button
+                class="px-4 py-1 rounded-full text-white bg-black transition"
+                aria-selected="true"
+                type="button"
+                >
+                New
+            </button>
+            <button
+                class="px-4 py-1 rounded-full text-gray-700 hover:text-black transition"
+                aria-selected="false"
+                type="button"
+                >
+                Multi-currency account
+            </button>
+        </div>
+
+        <h1 class="text-5xl font-bold mb-4 leading-tight lato-bold">All in one App finance <br> for your business</h1>
+        <p class="text-gray-600 mb-6 text-md">Keep your business account needs safely organized <br>under one roof. Manage money quickly, easily & <br>efficiently.</p>
+        <div class="flex items-center space-x-4 mb-6">
+            <button class="px-6 py-2 bg-black text-white rounded-full">Try for Free</button>
+            <button class="flex items-center px-4 py-2 border rounded-full">
+            Preview
+            <i class="fas fa-play-circle text-black text-md ml-2"></i>
+            </button>
+        </div>
+        <div class="flex items-center space-x-3">
+            <div class="avatar-group flex -space-x-3">
+                <img alt="User 1" class="size-12 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/32.jpg" />
+                <img alt="User 2" class="size-12 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/44.jpg" />
+                <img alt="User 3" class="size-12 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/76.jpg" />
+            </div>
+            <div>
+                <p class="text-xl text-gray-700 font-bold">12k+</p>
+                <p class="text-sm font-normal">Used by teams and professionals.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Visual/Metrics Section -->
+    <!-- <div class="bg-white p-6 relative bg-center bg-cover h-[420px] w-[570px]" style="background-image: url(./assets/image.png);">
+    </div> -->
+
+    <div class="relative w-full max-w-xl aspect-[4/3] bg-cover bg-center bg-no-repeat rounded-xl" style="background-image: url('/assets/image.png');">
+</div>
+
+  </section>
+
+  <!-- Logos Section -->
+  <section class="py-10 bg-white">
+    <div class="container mx-auto flex gap-4 justify-between items-center opacity-60 flex-wrap">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack" class="h-8 md:h-6 grayscale" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Zoom_Communications_Logo.svg/2560px-Zoom_Communications_Logo.svg.png" alt="Zoom" class="h-8 md:h-6 grayscale" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg" alt="Airbnb" class="h-8 md:h-6 grayscale" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify" class="h-8 md:h-6 grayscale" />
+      <img src="/assets/envato.png" alt="Envato" class="h-8 md:h-6 grayscale" />
+    </div>
+  </section>
+
+  <script>
+    const closeBtn = document.getElementById('close-banner');
+    const banner = document.getElementById('news-banner');
+
+    closeBtn.addEventListener('click', () => {
+        banner.remove();
+    });
+    </script>
+
+</body>
+</html>
