@@ -40,7 +40,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M18.364 18.364a9 9 0 11-12.728-12.728 9 9 0 0112.728 12.728z" />
         </svg>
         <span class="text-sm">Big news, we reduced our fees</span>
-        <a href="#" class="font-semibold text-black hover:underline whitespace-nowrap">Learn More &rarr;</a>
+        <a href="#" class="font-semibold text-black hover:underline whitespace-nowrap text-sm">Learn More &rarr;</a>
 
         <!-- Close button -->
         <button id="close-banner" aria-label="Close" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 focus:outline-none">
@@ -52,43 +52,57 @@
 
 
     <!-- Header -->
-    <header>
-        <div class="flex items-center justify-between py-4 animate-fade-in-up delay-300">
-            <div class="flex items-center gap-14 ">
-                <!-- Logo -->
-                <a href="#" class="flex items-center gap-2 font-bold text-xl sm:text-2xl">
-                <!-- Logo SVG -->
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="stroke-current text-black">
-                    <circle cx="12" cy="12" r="10" stroke-width="2" />
-                    <path d="M8 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span>Alva</span>
-                </a>
-                <!-- Desktop Nav -->
-                <nav class="hidden md:flex space-x-6 text-sm">
-                    <a href="#" class="hover:underline">Home</a>
-                    <a href="#" class="hover:underline">Features</a>
-                    <a href="#" class="hover:underline">Product</a>
-                    <a href="#" class="hover:underline">Pricing</a>
-                    <a href="#" class="hover:underline">Resource</a>
-                </nav>
-            </div>
-            
+     <header>
+  <div class="flex items-center justify-between py-4 animate-fade-in-up delay-300">
+    <div class="flex items-center gap-14">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 font-bold text-xl sm:text-2xl">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="stroke-current text-black">
+          <circle cx="12" cy="12" r="10" stroke-width="2" />
+          <path d="M8 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Alva</span>
+      </a>
 
-            <!-- Auth buttons -->
-            <div class="hidden sm:flex items-center space-x-2">
-            <button class="px-4 py-2 text-sm border rounded-full">Login</button>
-            <button class="px-4 py-2 text-sm bg-black text-white rounded-full">Register</button>
-            </div>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Features</a>
+        <a href="#" class="hover:underline">Product</a>
+        <a href="#" class="hover:underline">Pricing</a>
+        <a href="#" class="hover:underline">Resource</a>
+      </nav>
+    </div>
 
-            <!-- Mobile menu toggle (optional) -->
-            <button class="md:hidden p-2 text-gray-600">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            </button>
-        </div>
-    </header>
+    <!-- Auth buttons (desktop only) -->
+    <div class="hidden sm:flex items-center space-x-2">
+      <button class="px-4 py-2 text-sm border rounded-full">Login</button>
+      <button class="px-4 py-2 text-sm bg-black text-white rounded-full">Register</button>
+    </div>
+
+    <!-- Mobile menu toggle -->
+    <button id="mobile-menu-toggle" class="md:hidden p-2 text-gray-600">
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Nav Menu -->
+  <div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 px-6 py-4 bg-white border-t border-gray-200 animate-fade-in-down">
+    <a href="#" class="block text-sm hover:underline">Home</a>
+    <a href="#" class="block text-sm hover:underline">Features</a>
+    <a href="#" class="block text-sm hover:underline">Product</a>
+    <a href="#" class="block text-sm hover:underline">Pricing</a>
+    <a href="#" class="block text-sm hover:underline">Resource</a>
+    <div class="flex flex-col gap-2 pt-4 border-t mt-2">
+      <button class="px-4 py-2 text-sm border rounded-full">Login</button>
+      <button class="px-4 py-2 text-sm bg-black text-white rounded-full">Register</button>
+    </div>
+  </div>
+</header>
+    
+
 
 
   <!-- Hero Section -->
@@ -113,7 +127,7 @@
         </div>
 
         <h1 class="text-5xl font-bold mb-4 leading-tight lato-bold">All in one App finance <br> for your business</h1>
-        <p class="text-gray-600 mb-6 text-md">Keep your business account needs safely organized <br>under one roof. Manage money quickly, easily & <br>efficiently.</p>
+        <p class="text-gray-600 mb-6 text-md max-w-sm">Keep your business account needs, safely organized under one roof. Manage money quickly, easily & efficiently.</p>
         <div class="flex items-center space-x-4 mb-6 ">
             <button class="px-6 py-2 bg-black text-white rounded-full hover:bg-white hover:text-black hover:border">Try for Free</button>
             <button class="flex items-center px-4 py-2 border rounded-full hover:bg-gray-100">
@@ -143,7 +157,7 @@
 
   <!-- Logos Section -->
   <section class="py-10 bg-white">
-    <div class="container mx-auto flex gap-12 justify-center items-center opacity-60 flex-wrap">
+    <div class="container mx-auto flex gap-4 md:gap-12 justify-center items-center opacity-60 flex-wrap">
       <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack" class="h-5 md:h-6 grayscale hover:grayscale-0 transition duration-300 cursor-pointer" />
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Zoom_Communications_Logo.svg/2560px-Zoom_Communications_Logo.svg.png" alt="Zoom" class="h-3 md:h-4  grayscale hover:grayscale-0 transition duration-300 cursor-pointer" />
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg" alt="Airbnb" class="h-5 md:h-6 grayscale hover:grayscale-0 transition duration-300 cursor-pointer" />
@@ -181,7 +195,16 @@
 
     updateCount();
   });
+
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
 </script>
+
+
 
 
 </body>
