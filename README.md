@@ -18,7 +18,7 @@ This is a responsive **hero section** built using **HTML5** and **Tailwind CSS**
 
 ## 📸 Preview
 
-![Hero Screenshot](./assets/Alva-preview.png)
+![Hero Screenshot](./assets/Alva-preview.jpeg)
 
 > 🔎 Based on a concept spotted on [Dribbble]([https://dribbble.com](https://dribbble.com/shots/24832880-Financial-Payment-Landing-Hero-Section))
 ---
